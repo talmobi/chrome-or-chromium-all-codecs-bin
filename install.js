@@ -4,6 +4,15 @@ const downloadURLs = {
   win64: 'https://github.com/macchrome/winchrome/releases/download/v79.0.3945.130-r706915-Win64/ungoogled-chromium-79.0.3945.130-1_windows.7z'
 }
 
+const chromeFinder = require( 'chrome-finder' )
+
+try {
+  const p = chromeFinder()
+  console.log( 'Chrome: ' + p )
+  console.log( 'Chrome install found. Not installing Chromium.' )
+  if ( p ) return
+} catch ( err ) { /* ignore */ }
+
 const os = require( 'os' )
 const fs = require( 'fs' )
 const path = require( 'path' )
