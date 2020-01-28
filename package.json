@@ -1,13 +1,14 @@
 {
-  "name": "chromium-all-codecs-bin",
+  "name": "chrome-or-chromium-all-codecs-bin",
   "version": "0.0.1",
-  "description": "Download a Chromium all-codecs+ woolyss binary",
+  "description": "Return Chrome bin path or download a Chromium all-codecs+ woolyss binary",
   "main": "main.js",
   "scripts": {
     "install": "node install.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
+    "chrome",
     "chromium",
     "woolyss",
     "codec",
